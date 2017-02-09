@@ -28,7 +28,7 @@ module UndividedApi
     config.api_only = true
     config.middleware.insert_before 0, Rack::Cors do
       allow do
-        origins 'localhost:4200', 'undivided.io'
+        origins 'localhost:4200', 'http://www.undivided.io'
         resource '*',
           :headers => :any,
           :expose  => ['access-token', 'expiry', 'token-type', 'uid', 'client'],
