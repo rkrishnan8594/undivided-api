@@ -30,6 +30,7 @@ gem 'devise_token_auth'
 gem 'figaro'
 gem 'jsonapi-resources'
 gem 'omniauth'
+gem 'ember-cli-rails'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console

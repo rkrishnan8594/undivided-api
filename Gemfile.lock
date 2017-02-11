@@ -42,6 +42,10 @@ GEM
     bcrypt (3.1.11)
     builder (3.2.3)
     byebug (9.0.6)
+    climate_control (0.0.3)
+      activesupport (>= 3.0)
+    cocaine (0.5.8)
+      climate_control (>= 0.0.3, < 1.0)
     concurrent-ruby (1.0.4)
     devise (4.2.0)
       bcrypt (~> 3.0)
@@ -52,6 +56,12 @@ GEM
     devise_token_auth (0.1.39)
       devise (> 3.5.2, <= 4.2)
       rails (< 6)
+    ember-cli-rails (0.8.3)
+      cocaine (~> 0.5.8)
+      ember-cli-rails-assets (~> 0.6.2)
+      html_page (~> 0.1.0)
+      railties (>= 3.2)
+    ember-cli-rails-assets (0.6.2)
     erubis (2.7.0)
     ffi (1.9.17)
     figaro (1.1.1)
@@ -59,6 +69,7 @@ GEM
     globalid (0.3.7)
       activesupport (>= 4.1.0)
     hashie (3.4.6)
+    html_page (0.1.0)
     i18n (0.8.0)
     jsonapi-resources (0.8.3)
       concurrent-ruby
@@ -146,6 +157,7 @@ PLATFORMS
 DEPENDENCIES
   byebug
   devise_token_auth
+  ember-cli-rails
   figaro
   jsonapi-resources
   listen (~> 3.0.5)
