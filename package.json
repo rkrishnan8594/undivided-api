@@ -1,6 +1,9 @@
 {
   "scripts": {
-    "postinstall": "./bin/heroku_install"
+    "postinstall": [
+      "chmod a+x bin/heroku_install",
+      "./bin/heroku_install"
+    ]
   },
   "devDependencies": {
     "bower": "*"
